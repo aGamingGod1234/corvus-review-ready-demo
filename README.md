@@ -7,3 +7,14 @@ A deliberately small Python project used to demonstrate a governed Corvus change
 ```bash
 python app.py
 ```
+
+## Normalize a title
+
+Use `normalize_title` to produce a lowercase, hyphen-separated title:
+
+```python
+from title_normalizer import normalize_title
+
+normalized_title = normalize_title("  Corvus: Review-Ready Demo!  ")
+print(normalized_title)  # corvus-review-ready-demo
+```
